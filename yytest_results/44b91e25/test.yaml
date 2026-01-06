@@ -1,6 +1,0 @@
-appId: com.android.settings
----
-- launchApp
-- tapOn: network & internet
-- assertVisible: internet
-- pressBack
