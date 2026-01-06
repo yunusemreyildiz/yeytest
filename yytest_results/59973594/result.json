@@ -1,0 +1,30 @@
+{
+  "id": "59973594",
+  "name": "Ana Sayfa Kontrol",
+  "status": "failed",
+  "startedAt": "2026-01-05T23:12:19.050431",
+  "steps": [
+    {
+      "action": "Launch app \"com.pttem.epttavm.qa\"... COMPLETED",
+      "status": "passed"
+    },
+    {
+      "action": "Tap on \"pttavm\"... COMPLETED",
+      "status": "passed"
+    },
+    {
+      "action": "Input text Telefon... COMPLETED",
+      "status": "passed"
+    },
+    {
+      "action": "Assert that \"Telefon\" is visible... FAILED",
+      "status": "failed"
+    }
+  ],
+  "beforeScreenshot": "yytest_results/59973594/step_000_231219_159817.png",
+  "afterScreenshot": "yytest_results/59973594/step_001_231258_518890.png",
+  "finishedAt": "2026-01-05T23:12:58.786642",
+  "output": "Running on iPhone 16 Plus - iOS 18.5 - 9A6A1ECB-63DE-4C4C-A9BA-AFB98BCFE6B7\n > Flow test\nLaunch app \"com.pttem.epttavm.qa\"... COMPLETED\nTap on \"pttavm\"... COMPLETED\nInput text Telefon... COMPLETED\nAssert that \"Telefon\" is visible... FAILED\n\nAssertion is false: \"Telefon\" is visible\n\nAssertion '\"Telefon\" is visible' failed. Check the UI hierarchy in debug artifacts to verify the element state and properties.\n\nPossible causes:\n- Element selector may be incorrect - check if there are similar elements with slightly different names/properties.\n- Element may be temporarily unavailable due to loading state\n- This could be a real regression that needs to be addressed\n\n==== Debug output (logs & screenshots) ====\n\n/Users/emre.yildiz/.maestro/tests/2026-01-05_231229\n",
+  "error": "",
+  "yaml": "appId: com.pttem.epttavm.qa\n---\n- launchApp  # Uygulama başlatıldı\n- tapOn: \"pttavm\"  # Arama alanına tıklandı\n- inputText: \"Telefon\"  # Telefon kelimesi yazıldı\n- assertVisible: \"Telefon\"  # Telefon kelimesi görünmeli"
+}

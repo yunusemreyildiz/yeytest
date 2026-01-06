@@ -1,0 +1,26 @@
+# Environment variables - GİZLİ!
+.env
+.env.local
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Test outputs
+yeytest_results/
+yeytest_tests/
+test_output/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db

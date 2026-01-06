@@ -1,0 +1,13 @@
+{
+  "id": "aa949e25",
+  "name": "Ana Sayfa Kontrol",
+  "status": "failed",
+  "startedAt": "2026-01-05T23:05:05.322400",
+  "steps": [],
+  "beforeScreenshot": "yytest_results/aa949e25/step_000_230505_435783.png",
+  "afterScreenshot": "yytest_results/aa949e25/step_001_230511_188261.png",
+  "finishedAt": "2026-01-05T23:05:11.566869",
+  "output": "\n",
+  "error": "> Invalid Command: tapOnPoint\n\n/Users/emre.yildiz/Desktop/yytest/yytest_results/aa949e25/test.yaml:4\n╭────────────────────────────────────────────────────────────────────────────╮\n│ 2 | ---                                                                    │\n│ 3 | - launchApp  # Uygulama başlatıldı                                     │\n│ 4 | - tapOnPoint: \"50%,15%\"  # Arama alanına tıklandı (ekranın üst ortası) │\n│                 ^                                                          │\n│ ╭──────────────────────────────────────╮                                   │\n│ │ `tapOnPoint` is not a valid command. │                                   │\n│ │                                      │                                   │\n│ │ Did you mean `tapOn`?                │                                   │\n│ ╰──────────────────────────────────────╯                                   │\n│ 5 | - inputText: \"Telefon\"  # Telefon kelimesi yazıldı                     │\n│ 6 | - assertVisible: \"Telefon\"  # Telefon kelimesi görünmeli               │\n╰────────────────────────────────────────────────────────────────────────────╯\n",
+  "yaml": "appId: com.pttem.epttavm.qa\n---\n- launchApp  # Uygulama başlatıldı\n- tapOnPoint: \"50%,15%\"  # Arama alanına tıklandı (ekranın üst ortası)\n- inputText: \"Telefon\"  # Telefon kelimesi yazıldı\n- assertVisible: \"Telefon\"  # Telefon kelimesi görünmeli"
+}

@@ -1,0 +1,14 @@
+{
+  "id": "5fa26f8e",
+  "name": "Scroll Test",
+  "appId": "com.android.settings",
+  "scenario": "1. Uygulamayı aç\n2. Aşağı kaydır\n3. Aşağı kaydır\n4. Yukarı kaydır",
+  "yaml": "appId: com.android.settings\n---\n- launchApp\n- scroll\n- scroll\n- swipe:\n    direction: UP\n    duration: 500\n",
+  "expectations": [
+    "launchApp başarılı",
+    "scroll başarılı",
+    "scroll başarılı",
+    "scroll başarılı"
+  ],
+  "createdAt": "2026-01-05T01:07:47.621946"
+}

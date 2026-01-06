@@ -1,0 +1,21 @@
+# yytest - Settings App Testi
+appId: com.android.settings
+---
+# Ayarlar uygulamasını aç
+- launchApp
+
+# Animasyonun bitmesini bekle
+- waitForAnimationToEnd
+
+# Network & internet'e tıkla
+- tapOn: "Network & internet"
+
+# Sayfanın yüklenmesini bekle
+- waitForAnimationToEnd
+
+# Geri git
+- pressKey: back
+
+# Ana ekrana dön
+- waitForAnimationToEnd
+

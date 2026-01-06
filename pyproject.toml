@@ -1,0 +1,53 @@
+[project]
+name = "yeytest"
+version = "0.1.0"
+description = "AI-Powered Visual Test Validation for Mobile Apps"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "yeytest", email = "hello@yeytest.dev"}
+]
+keywords = ["testing", "mobile", "maestro", "ai", "visual-testing"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "pyyaml>=6.0",
+    "pillow>=10.0.0",
+    "httpx>=0.25.0",
+    "pydantic>=2.0.0",
+    "opencv-python-headless>=4.8.0",
+    "pytesseract>=0.3.10",
+]
+
+[project.optional-dependencies]
+cloud = [
+    "anthropic>=0.18.0",
+    "openai>=1.0.0",
+]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "ruff>=0.1.0",
+]
+
+[project.scripts]
+yeytest = "yytest.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+

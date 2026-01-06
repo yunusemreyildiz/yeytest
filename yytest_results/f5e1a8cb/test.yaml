@@ -1,0 +1,6 @@
+appId: com.pttem.epttavm.qa
+---
+- launchApp  # Uygulama başlatıldı
+- tapOnPoint: "50%,15%"  # Arama alanına tıklandı (ekranın üst ortası)
+- inputText: "Telefon"  # Telefon kelimesi yazıldı
+- assertVisible: "Telefon"  # Telefon kelimesi görünmeli

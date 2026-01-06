@@ -1,0 +1,21 @@
+# yytest Demo Test - Basit UI Testi
+appId: com.android.settings
+---
+# Ayarlar uygulamasını aç
+- launchApp
+
+# Biraz bekle
+- waitForAnimationToEnd
+
+# Aşağı kaydır
+- scroll
+
+# 2 saniye bekle
+- extendedWaitUntil:
+    visible: ".*"
+    timeout: 5000
+
+# Yukarı kaydır  
+- swipe:
+    direction: UP
+    duration: 500
